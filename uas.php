@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet"> <!-- ✅ bxSlider CSS -->
 </head>
 <body>
 
@@ -43,17 +44,17 @@
 
 <div class="container my-5">
 
-  <!-- ✅ Slider Gambar Manual -->
+  <!-- ✅ Slider Gambar Bus (Bootstrap) -->
   <div id="carouselBus" class="carousel slide mb-5 shadow rounded overflow-hidden">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://tiketwisata.surabaya.go.id/storage/tour/bis_shopping_culinary_track_1649147871.jpeg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bus 1">
+        <img src="https://i.pinimg.com/736x/8f/00/35/8f003504131f16df7a0818b29cdfc7ba.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bus 1">
       </div>
       <div class="carousel-item">
-        <img src="https://www.sembodorentcar.co.id/images/news/2-2_-_Copy.jpeg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bus 2">
+        <img src="https://i.pinimg.com/736x/02/2c/25/022c2546a6c0c780a9c00a9182bd329f.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bus 2">
       </div>
       <div class="carousel-item">
-        <img src="https://www.saturental.com/media/uploads/2018/07/saturental-foto-bus-pariwisata-trac-shd-hdd-terbaru-48-59-seats-a.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bus 3">
+        <img src="https://i.pinimg.com/736x/97/59/a5/9759a5b246e2068c587a1b5ba2a3bb61.jpg" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="Bus 3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselBus" data-bs-slide="prev">
@@ -64,18 +65,18 @@
     </button>
   </div>
 
- <!-- Penjelasan -->
-<div class="card shadow-lg mb-4">
-  <div class="card-body bg-light">
-    <h5 class="text-success fw-bold"><i class="bi bi-info-circle-fill"></i> Tentang Layanan Bus Pariwisata</h5>
-    <p class="mb-0 text-dark">
-      Layanan Bus Pariwisata kami dirancang untuk memberikan pengalaman perjalanan yang aman, nyaman, dan menyenangkan bagi para wisatawan. Sistem ini dibuat untuk membantu pengelolaan data keberangkatan bus secara digital, mulai dari pendaftaran hingga pencatatan jumlah penumpang.
-      <br><br>
-      Web ini sangat cocok digunakan oleh agen travel, perusahaan otobus (PO), maupun instansi pendidikan yang sering mengadakan kegiatan wisata. Dengan antarmuka yang sederhana namun elegan, pengelolaan jadwal bus menjadi lebih efisien dan cepat tanpa ribet.
-    </p>
-  </div>
-</div>
 
+  <!-- Penjelasan -->
+  <div class="card shadow-lg mb-4">
+    <div class="card-body bg-light">
+      <h5 class="text-success fw-bold"><i class="bi bi-info-circle-fill"></i> Tentang Layanan Bus Pariwisata</h5>
+      <p class="mb-0 text-dark">
+        Layanan Bus Pariwisata kami dirancang untuk memberikan pengalaman perjalanan yang aman, nyaman, dan menyenangkan bagi para wisatawan. Sistem ini dibuat untuk membantu pengelolaan data keberangkatan bus secara digital, mulai dari pendaftaran hingga pencatatan jumlah penumpang.
+        <br><br>
+        Web ini sangat cocok digunakan oleh agen travel, perusahaan otobus (PO), maupun instansi pendidikan yang sering mengadakan kegiatan wisata. Dengan antarmuka yang sederhana namun elegan, pengelolaan jadwal bus menjadi lebih efisien dan cepat tanpa ribet.
+      </p>
+    </div>
+  </div>
 
   <!-- Kutipan Wisata -->
   <div class="text-center mb-5">
@@ -86,7 +87,7 @@
     </blockquote>
   </div>
 
-  <!-- ✅ Formulir Ditarik ke Atas -->
+  <!-- Formulir -->
   <div class="card shadow-lg mb-5" id="form">
     <div class="card-header bg-success text-white text-center">
       <h4><i class="bi bi-pencil-square"></i> Form Pendaftaran Bus</h4>
@@ -161,6 +162,20 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ bxSlider JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      pause: 3000,
+      mode: 'fade',
+      captions: true
+    });
+  });
+</script>
 
 </body>
 </html>
