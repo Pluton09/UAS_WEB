@@ -1,0 +1,34 @@
+body {
+  background: url('https://img.freepik.com/premium-vector/bus-logo-design-vector-travel-bus-logo_293731-683.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bg-image {
+  background: rgba(0, 0, 0, 0.7); /* transparan hitam */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+}
+
+.card-header h2,
+.card-header h4 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
